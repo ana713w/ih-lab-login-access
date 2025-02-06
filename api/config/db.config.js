@@ -6,11 +6,11 @@ const MONGODB_URI =
 mongoose
   .connect(MONGODB_URI)
   .then(() =>
-    console.info(`Successfully connected to the database ${MONGODB_URI}`)
+    console.info(`Successfully connected to the database`)
   )
   .catch((error) => {
     console.error(
-      `An error occurred trying to connect to the database ${MONGODB_URI}`,
+      `An error occurred trying to connect to the database`,
       error
     );
     process.exit(0);
